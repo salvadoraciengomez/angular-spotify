@@ -13,6 +13,7 @@ import { ROUTES } from './app.routes';
 
 //Peticiones HTTP GET
 import {HttpClientModule} from '@angular/common/http';
+import { SpotifyService } from './services/spotify.service';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import {HttpClientModule} from '@angular/common/http';
     HttpClientModule,
     RouterModule.forRoot( ROUTES, {useHash:true})
   ],
-  providers: [],
+  providers: [SpotifyService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
