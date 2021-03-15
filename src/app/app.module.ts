@@ -11,6 +11,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import {RouterModule} from '@angular/router';
 import { ROUTES } from './app.routes';
 
+//Peticiones HTTP GET
+import {HttpClientModule} from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,6 +24,7 @@ import { ROUTES } from './app.routes';
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     RouterModule.forRoot( ROUTES, {useHash:true})
   ],
   providers: [],
