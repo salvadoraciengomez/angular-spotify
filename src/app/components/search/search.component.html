@@ -4,7 +4,7 @@
   </div>
 
 </div>
-
+<!--
 <div class="card-columns m-5">
   <div *ngFor="let artista of artistas" class="card">
     <img [src]="artista.images|noimage" class="card-img-top" alt="...">
@@ -13,4 +13,6 @@
       <p class="card-text"><span *ngFor="let artista2 of cancion.artists" class="badge badge-primary">{{artista2.name}}</span></p>
     </div>
   </div>
-</div>
+</div> -->
+
+<app-tarjetas [items]="artistas"></app-tarjetas>
